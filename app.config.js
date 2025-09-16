@@ -22,10 +22,7 @@ export default {
       bundleIdentifier: 'com.shambebabu.voiceappme'
     },
     android: {
-      adaptiveIcon: {
-        foregroundImage: './assets/VoiceAppMe_with_Mute.png',
-        backgroundColor: '#FFFFFF'
-      },
+      icon: './assets/VoiceAppMe_with_Mute.png',
       package: 'com.shambebabu.voiceappme',
       jsEngine: 'jsc'
     },
