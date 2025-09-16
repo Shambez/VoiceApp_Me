@@ -1,0 +1,9 @@
+iOS Build URL: https://expo.dev/accounts/shambez/projects/voiceapp-me/builds/687f7f09-4e5b-4be9-9e64-21972e76ffbd
+iOS Download URL: https://expo.dev/artifacts/eas/dUqAquKRnMZzXJiZQWyjVk.ipa
+
+To install on iOS devices:
+1. Open the Build URL above on your iOS device
+2. Or scan the QR code that was displayed in the terminal
+3. Follow the installation instructions on the Expo page
+
+Note: Android build failed due to Gradle configuration issues, but can be resolved in future builds.

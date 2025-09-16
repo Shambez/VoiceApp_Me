@@ -1,0 +1,114 @@
+🎤 VoiceApp_Me LIVE Autopilot Starting...
+🧹 VoiceApp_Me Cleanup & Prep Starting...
+./node_modules/expo-dev-launcher/ios/Assets.xcassets/user-icon.imageset/user-icon 1.png
+./node_modules/expo-dev-launcher/ios/Assets.xcassets/user-icon.imageset/user-icon@3x 1.png
+./node_modules/expo-dev-launcher/ios/Assets.xcassets/user-icon.imageset/user-icon@2x 1.png
+./build_helpers 2.sh
+./node_modules/command-exists/test/non-executable-script.js
+./node_modules/command-exists/test/executable-script.cmd
+./node_modules/command-exists/test/executable-script.js
+./node_modules/node-domexception/.history/test_20210527205603.js
+./node_modules/node-domexception/.history/index_20210527203842.js
+./node_modules/resolve/test/pathfilter/deep_ref/main.js
+./node_modules/resolve/test/shadowed_core/node_modules/util/index.js
+./node_modules/resolve/test/resolver/mug.coffee
+./node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js
+./node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep
+./node_modules/resolve/test/resolver/multirepo/packages/package-b/index.js
+./node_modules/resolve/test/resolver/mug.js
+./node_modules/resolve/test/resolver/baz/doom.js
+./node_modules/resolve/test/resolver/browser_field/a.js
+./node_modules/resolve/test/resolver/browser_field/b.js
+./node_modules/resolve/test/resolver/false_main/index.js
+./node_modules/resolve/test/resolver/other_path/root.js
+./node_modules/resolve/test/resolver/other_path/lib/other-lib.js
+./node_modules/fast-xml-parser/src/v6/Report.js
+./node_modules/fast-xml-parser/src/xmlbuilder/prettifyJs2Xml.js
+./node_modules/fast-xml-parser/src/v5/Report.js
+./node_modules/nested-error-stacks/README.md~
+./node_modules/@react-native-firebase/app/android/src/main/java/io/invertase/firebase/app/.gitkeep
+./node_modules/@react-native-firebase/app/android/src/main/java/io/invertase/firebase/interfaces/.gitkeep
+./node_modules/expo/node_modules/undici/lib/llhttp/.gitkeep
+./node_modules/react-native-webrtc/apple/.placeholder
+./node_modules/tr46/lib/.gitkeep
+./node_modules/expo-modules-core/src/sweet/setUpJsLogger.fx.web.ts
+./node_modules/react-native-web/dist/types/index.js
+./node_modules/react-native-web/dist/types/styles.js
+./node_modules/react-native-web/dist/exports/TextInput/types.js
+./node_modules/react-native-web/dist/exports/Image/types.js
+./node_modules/react-native-web/dist/exports/View/types.js
+./node_modules/react-native-web/dist/exports/Text/types.js
+./node_modules/structured-headers/dist/build
+./node_modules/terser/dist/.gitkeep
+./node_modules/send/node_modules/mime/.npmignore
+./node_modules/css-in-js-utils/es/coverage/lcov-report/prettify.d.ts
+./node_modules/metro-file-map/src/crawlers/__fixtures__/link-to-directory/other.file
+./node_modules/metro-file-map/src/crawlers/__fixtures__/directory/other.file
+./node_modules/requireg/node_modules/resolve/test/pathfilter/deep_ref/main.js
+./node_modules/requireg/node_modules/resolve/test/resolver/mug.coffee
+./node_modules/requireg/node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js
+./node_modules/requireg/node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep
+./node_modules/requireg/node_modules/resolve/test/resolver/mug.js
+./node_modules/requireg/node_modules/resolve/test/resolver/baz/doom.js
+./node_modules/requireg/node_modules/resolve/test/resolver/browser_field/a.js
+./node_modules/requireg/node_modules/resolve/test/resolver/browser_field/b.js
+./node_modules/requireg/node_modules/resolve/test/resolver/other_path/root.js
+./node_modules/requireg/node_modules/resolve/test/resolver/other_path/lib/other-lib.js
+./android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp
+./android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp
+./android/app/src/main/res/mipmap-hdpi/ic_launcher.webp
+./android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp
+./android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp
+./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp
+./android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp
+./android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp
+./android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp
+./android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp
+./android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp
+./android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp
+./.DS_Store
+./.git.backup/.DS_Store
+./node_modules/.DS_Store
+./node_modules/react-native/.DS_Store
+./node_modules/firebase/.DS_Store
+./components/.DS_Store
+./.git/.DS_Store
+./.git/objects/.DS_Store
+./assets/.DS_Store
+./assets/voiceappme/.DS_Store
+[main 3f8dd16] cleanup: auto-remove dups/empties & prep build [Sat 13 Sep 2025 14:41:04 AEST]
+ 54 files changed, 3397 insertions(+), 5347 deletions(-)
+ delete mode 100644 .DS_Store
+ create mode 100644 App.js
+ delete mode 100644 android/app/src/main/res/drawable-hdpi/splashscreen_logo.png
+ delete mode 100644 android/app/src/main/res/drawable-mdpi/splashscreen_logo.png
+ delete mode 100644 android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png
+ delete mode 100644 android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png
+ delete mode 100644 android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png
+ delete mode 100644 android/app/src/main/res/mipmap-hdpi/ic_launcher.webp
+ delete mode 100644 android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp
+ delete mode 100644 android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp
+ delete mode 100644 android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp
+ delete mode 100644 android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp
+ delete mode 100644 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp
+ delete mode 100644 android/app/src/main/res/values-night/colors.xml
+ delete mode 100644 assets/.DS_Store
+ delete mode 100644 assets/voiceappme/.DS_Store
+ delete mode 100644 build_helpers 2.sh
+ delete mode 100644 ios/Podfile.lock
+ delete mode 100644 ios/VoiceAppMe/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png
+ delete mode 100644 ios/VoiceAppMe/Images.xcassets/Contents.json
+ delete mode 100644 ios/VoiceAppMe/Images.xcassets/SplashScreenBackground.colorset/Contents.json
+ create mode 100644 ios/VoiceAppMe/Images.xcassets/SplashScreenLegacy.imageset/SplashScreenLegacy.png
+ delete mode 100644 ios/VoiceAppMe/Images.xcassets/SplashScreenLegacy.imageset/image.png
+ delete mode 100644 ios/VoiceAppMe/Images.xcassets/SplashScreenLegacy.imageset/image@2x.png
+ delete mode 100644 ios/VoiceAppMe/Images.xcassets/SplashScreenLegacy.imageset/image@3x.png
+ delete mode 100644 ios/VoiceAppMe/VoiceAppMe.entitlements
+✅ VoiceApp_Me cleanup done.
+✅ Version bumped to 1.0.0
