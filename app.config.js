@@ -7,10 +7,10 @@ export default {
     version: '1.0.0',
     owner: 'shambez',
     orientation: 'portrait',
-    icon: './assets/icon.png',
+    icon: './assets/VoiceAppMe_with_Mute.png',
     userInterfaceStyle: 'light',
     splash: {
-      image: './assets/splash.png',
+      image: './assets/VoiceAppMe_with_Mute.png',
       resizeMode: 'contain',
       backgroundColor: '#ffffff'
     },
@@ -23,7 +23,7 @@ export default {
     },
     android: {
       adaptiveIcon: {
-        foregroundImage: './assets/adaptive-icon.png',
+        foregroundImage: './assets/VoiceAppMe_with_Mute.png',
         backgroundColor: '#FFFFFF'
       },
       package: 'com.shambebabu.voiceappme',

@@ -1,4 +1,4 @@
-package com.shambez.voiceappme
+package com.shambebabu.voiceappme
 
 import android.app.Application
 import android.content.res.Configuration
