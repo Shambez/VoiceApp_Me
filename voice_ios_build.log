@@ -1,0 +1,20 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace VoiceAppMe.xcworkspace -scheme VoiceAppMe -configuration Debug -sdk iphonesimulator -showBuildSettings
+
+Build settings from command line:
+    SDKROOT = iphonesimulator18.5
+
+Build settings for action build and target VoiceAppMe:
+    ACTION = build
+    AD_HOC_CODE_SIGNING_ALLOWED = YES
+    AGGREGATE_TRACKED_DOMAINS = YES
+    ALLOW_BUILD_REQUEST_OVERRIDES = NO
+    ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO
+    ALTERNATE_GROUP = staff
+    ALTERNATE_MODE = u+w,go-w,a+rX
+    ALTERNATE_OWNER = shambebabu
+    ALTERNATIVE_DISTRIBUTION_WEB = NO
+    ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+    ALWAYS_SEARCH_USER_PATHS = NO
+    ALWAYS_USE_SEPARATE_HEADERMAPS = NO
+    APPLICATION_EXTENSION_API_ONLY = NO
