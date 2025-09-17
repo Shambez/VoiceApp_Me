@@ -1,0 +1,10 @@
+IOS	preview	https://expo.dev/artifacts/eas/mXN4dkGXdAhcEtTo78MUYo.ipa
+ANDROID	preview	
+IOS	preview	https://expo.dev/artifacts/eas/vCw8BLhZxw2hCBfjtZunEV.ipa
+ANDROID	preview	
+IOS	preview	https://expo.dev/artifacts/eas/pAggATWWwwvt6oX5XRZ99H.ipa
+ANDROID	preview	
+IOS	preview	https://expo.dev/artifacts/eas/4hi3BgQjVFgLPhhcXzmU9x.ipa
+ANDROID	preview	
+ANDROID	preview	
+IOS	preview	https://expo.dev/artifacts/eas/dUqAquKRnMZzXJiZQWyjVk.ipa

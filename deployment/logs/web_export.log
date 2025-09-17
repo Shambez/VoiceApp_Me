@@ -1,0 +1,15 @@
+Starting Metro Bundler
+Web node_modules/expo/AppEntry.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web node_modules/expo/AppEntry.js ▓▓▓▓▓▓▓▓▓▓░░░░░░ 64.0% (38/58)
+Web node_modules/expo/AppEntry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 98.4% (126/127)
+Web Bundled 8811ms node_modules/expo/AppEntry.js (131 modules)
+
+› web bundles (1):
+_expo/static/js/web/AppEntry-a968c2573339e5dffa64c1386ad590c6.js (299 kB)
+
+› Files (3):
+favicon.ico (14.5 kB)
+index.html (1.22 kB)
+metadata.json (49 B)
+
+Exported: web-build

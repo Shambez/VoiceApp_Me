@@ -1,3 +1,462 @@
-The following error occurred:
-  All of the following must be provided when using --json: --non-interactive
-See more help with --help
+[
+  {
+    "id": "a9c1102d-771a-4d31-8fd1-6e041e9ff24e",
+    "status": "FINISHED",
+    "platform": "IOS",
+    "artifacts": {
+      "buildUrl": "https://expo.dev/artifacts/eas/mXN4dkGXdAhcEtTo78MUYo.ipa",
+      "xcodeBuildLogsUrl": "https://job-logs.eascdn.net/production-xcode-logs/a9c1102d-771a-4d31-8fd1-6e041e9ff24e?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20250917%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250917T101800Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=ad6616b5ab73930565c353f1a06ceeabb3e0762288b6c9cb517b61f181f89e1474aaa751375241ef673a3866a870d82aa7bad8fcb1646215b4f5f44a38796c0b28ce8e45e37824ef83a5405f704c052e541f4da49e464452085f55392a024f7770db03e1e1227bc2c529ac2a951a8f0759a9ec97dd5cf1bd4eaab7132cb7c2aacbe0c8ade8f3494418ea60de72e785f3d0159bfd8fed8c26d41bab691e35a027f657fe3ea192880975cd251dc748227bbe5051f041b523c823614d71ed3452908cd0fa47ffc514e19d2bc749802f2c88f215ac914408346114ff1a4747ff37b4048d63a8c6f0421a84171b4747229e9b42b3c0cca893174135126dc2ebb8d1bb",
+      "applicationArchiveUrl": "https://expo.dev/artifacts/eas/mXN4dkGXdAhcEtTo78MUYo.ipa"
+    },
+    "fingerprint": {
+      "id": "00cf967c-065e-462d-9cd9-18908c132133",
+      "hash": "15bdfb6476be6de77dcb0e488bfaabf7bed72fd8"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "7276f6a63aab7ab1a29248fa00f9d4ec66ede52d",
+    "gitCommitMessage": "Block 5b: OTA + preview build logs + URLs (VoiceApp_Me)",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T05:46:00.511Z",
+    "updatedAt": "2025-09-17T05:53:08.264Z",
+    "completedAt": "2025-09-17T05:53:01.845Z",
+    "expirationDate": "2025-12-16T05:46:00.532Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 146989,
+      "buildQueueTime": 51134,
+      "buildDuration": 219020
+    }
+  },
+  {
+    "id": "21a6f840-50b1-4ef3-a724-34e4fadf40eb",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+      "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "e6c0e996-910f-4036-b523-99c4731c2ec8",
+      "hash": "5643b32a80687b84ad9bc99f2410f3a034b86892"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "7276f6a63aab7ab1a29248fa00f9d4ec66ede52d",
+    "gitCommitMessage": "Block 5b: OTA + preview build logs + URLs (VoiceApp_Me)",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T05:44:56.373Z",
+    "updatedAt": "2025-09-17T05:48:20.200Z",
+    "completedAt": "2025-09-17T05:48:09.689Z",
+    "expirationDate": "2025-12-16T05:44:56.395Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 101,
+      "buildQueueTime": 43912,
+      "buildDuration": 149038
+    }
+  },
+  {
+    "id": "eff25dae-a2df-4675-9961-86005ff0c015",
+    "status": "FINISHED",
+    "platform": "IOS",
+    "artifacts": {
+      "buildUrl": "https://expo.dev/artifacts/eas/vCw8BLhZxw2hCBfjtZunEV.ipa",
+      "xcodeBuildLogsUrl": "https://job-logs.eascdn.net/production-xcode-logs/eff25dae-a2df-4675-9961-86005ff0c015?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20250917%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250917T101800Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=9e3acaf4b6925ef32605d1f5534e408be4f790ea75e0a45e3c4f76a5abb3bb93b54af803bf1149806cdf02d0012d4e015d66b6d930b07eb349965094c4628ee3b1faccd193425f54dc033dab58378315a892440773d6f61c999553b915c444c05c1ee8bc806c2361187cb58973f5dee6b86bbe20db28b05ac07006ad7319004b2231b2ddfd51b42e66962be20863ba2fe0180165b25e30afe51c90f58298ffcb5acc08affbc9494f6ed76d2a7989eaa98538d477eb8fe69ce8053f63b76e7eff71873a68939e08b73c797bdf0e4b0deaab412f3903ae18f2f5834d9679ae1d38fd13010dde3e5f66828195a4f5fb648b54ce399ff9f3be073ee3b4cd7c8144dc",
+      "applicationArchiveUrl": "https://expo.dev/artifacts/eas/vCw8BLhZxw2hCBfjtZunEV.ipa"
+    },
+    "fingerprint": {
+      "id": "00cf967c-065e-462d-9cd9-18908c132133",
+      "hash": "15bdfb6476be6de77dcb0e488bfaabf7bed72fd8"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "7276f6a63aab7ab1a29248fa00f9d4ec66ede52d",
+    "gitCommitMessage": "Block 5b: OTA + preview build logs + URLs (VoiceApp_Me)",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T05:17:10.965Z",
+    "updatedAt": "2025-09-17T05:24:07.347Z",
+    "completedAt": "2025-09-17T05:23:58.549Z",
+    "expirationDate": "2025-12-16T05:17:10.986Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 135372,
+      "buildQueueTime": 50718,
+      "buildDuration": 217360
+    }
+  },
+  {
+    "id": "4d76bacf-9a06-45ef-8612-e4339d7bb6b3",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+      "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "e6c0e996-910f-4036-b523-99c4731c2ec8",
+      "hash": "5643b32a80687b84ad9bc99f2410f3a034b86892"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "7276f6a63aab7ab1a29248fa00f9d4ec66ede52d",
+    "gitCommitMessage": "Block 5b: OTA + preview build logs + URLs (VoiceApp_Me)",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T05:15:52.115Z",
+    "updatedAt": "2025-09-17T05:19:20.308Z",
+    "completedAt": "2025-09-17T05:19:15.100Z",
+    "expirationDate": "2025-12-16T05:15:52.144Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 103,
+      "buildQueueTime": 47678,
+      "buildDuration": 154956
+    }
+  },
+  {
+    "id": "bf0ae320-4cba-4856-964f-c30a89bf29f1",
+    "status": "FINISHED",
+    "platform": "IOS",
+    "artifacts": {
+      "buildUrl": "https://expo.dev/artifacts/eas/pAggATWWwwvt6oX5XRZ99H.ipa",
+      "xcodeBuildLogsUrl": "https://job-logs.eascdn.net/production-xcode-logs/bf0ae320-4cba-4856-964f-c30a89bf29f1?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20250917%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250917T101800Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=507dfbdda2271e7d3292d0b0721d93ee4c73f93e079327ee185b113b223d63d3b16f37db75f6814b8ac6c51429da3b8b0c5276f2189615852e3aad0a5d945aaa2cbe4178128c5e5728d07f94e279a641f47be5308e4d7152c12f7246c68b1c5cbfddf9b82f37968f96492eb560f8902fe9371e25717bfa58e523b90ed1a1743ac76879cac9abd99f96a68109eabaeeb3d7219d2b8f13199641f4c102d0e2e1bf7b3047ff7a5f8e9d39d9f963e26b0c77a937ecb9686494bc5486e606ad0d696ba129114770722066fbd67a307592d0133d364eea769f077158a2f30fb4a3b4a8458996a8863b80c1253f8bed67dfe97dc879729b55bcc35c8b1fff14c81252c3",
+      "applicationArchiveUrl": "https://expo.dev/artifacts/eas/pAggATWWwwvt6oX5XRZ99H.ipa"
+    },
+    "fingerprint": {
+      "id": "00cf967c-065e-462d-9cd9-18908c132133",
+      "hash": "15bdfb6476be6de77dcb0e488bfaabf7bed72fd8"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "7276f6a63aab7ab1a29248fa00f9d4ec66ede52d",
+    "gitCommitMessage": "Block 5b: OTA + preview build logs + URLs (VoiceApp_Me)",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T04:51:43.689Z",
+    "updatedAt": "2025-09-17T04:58:59.554Z",
+    "completedAt": "2025-09-17T04:58:58.423Z",
+    "expirationDate": "2025-12-16T04:51:43.706Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 227730,
+      "buildQueueTime": 47818,
+      "buildDuration": 154960
+    }
+  },
+  {
+    "id": "5b842bca-65b3-411c-8783-862eeeffa883",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+      "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "e6c0e996-910f-4036-b523-99c4731c2ec8",
+      "hash": "5643b32a80687b84ad9bc99f2410f3a034b86892"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "7276f6a63aab7ab1a29248fa00f9d4ec66ede52d",
+    "gitCommitMessage": "Block 5b: OTA + preview build logs + URLs (VoiceApp_Me)",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T04:50:41.343Z",
+    "updatedAt": "2025-09-17T04:55:33.202Z",
+    "completedAt": "2025-09-17T04:55:23.859Z",
+    "expirationDate": "2025-12-16T04:50:41.399Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 155,
+      "buildQueueTime": 49542,
+      "buildDuration": 231965
+    }
+  },
+  {
+    "id": "1a91d215-1fea-4c9a-adc1-67a8f09e678f",
+    "status": "FINISHED",
+    "platform": "IOS",
+    "artifacts": {
+      "buildUrl": "https://expo.dev/artifacts/eas/4hi3BgQjVFgLPhhcXzmU9x.ipa",
+      "xcodeBuildLogsUrl": "https://job-logs.eascdn.net/production-xcode-logs/1a91d215-1fea-4c9a-adc1-67a8f09e678f?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20250917%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250917T101800Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=8567f355671c9b0921c69b1ad48ce23f87eaab4abb29c18e55476d12a972918eda9e7779dab4601a375e77662f08d1178549b3bf47d4c3e3753125d1f299cfe7429991ea121d09a7729200c67eac2352ff43e5d06ff92cc3bdea405fec94dffb3b804c738c533eb4d26a67f509c84000b566e7f42744e4c0d2972d8e8f063ef49e478c89e70acac4cfc73cf56d9906861e4e97dd9a354613f457a74903dfb85efafcd99051cf67fe2ff760a1d094904a60e384a1f3cc168df68a23941d12d48b4708ededa7b1ff58fd34959c67d5c00968f476d0ef43b42014ae45ff64c69007969cc9f66abfcb70b9144749892d20b376170cd94cc4d5bc2e6d947dc20fd564",
+      "applicationArchiveUrl": "https://expo.dev/artifacts/eas/4hi3BgQjVFgLPhhcXzmU9x.ipa"
+    },
+    "fingerprint": {
+      "id": "cdd7025c-68cc-4bab-bb8b-02d81e028134",
+      "hash": "9ec47589981c6ee5469aa09126f7779074def3c6"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "a08f0fc4a69e2f52e6183e952b232fab10cdc644",
+    "gitCommitMessage": "Fix .gitignore format and ensure credentials are ignored",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T02:30:21.586Z",
+    "updatedAt": "2025-09-17T02:35:02.971Z",
+    "completedAt": "2025-09-17T02:34:55.489Z",
+    "expirationDate": "2025-12-16T02:30:21.621Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 147,
+      "buildQueueTime": 44039,
+      "buildDuration": 225551
+    }
+  },
+  {
+    "id": "cedfee7f-23c5-4467-9979-647a83827f37",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+      "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "cd915381-d828-4ca9-ab44-2b1f3753476c",
+      "hash": "f649cea149ec2ba863e082d612888e2c590935ca"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "a08f0fc4a69e2f52e6183e952b232fab10cdc644",
+    "gitCommitMessage": "Fix .gitignore format and ensure credentials are ignored",
+    "priority": "HIGH",
+    "createdAt": "2025-09-17T02:14:07.461Z",
+    "updatedAt": "2025-09-17T02:20:44.692Z",
+    "completedAt": "2025-09-17T02:20:40.260Z",
+    "expirationDate": "2025-12-16T02:14:07.511Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 164,
+      "buildQueueTime": 37887,
+      "buildDuration": 354437
+    }
+  },
+  {
+    "id": "00d5c259-5f9f-414c-8593-32ce84b4ffd3",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "EAS_BUILD_UNKNOWN_GRADLE_ERROR",
+      "message": "Gradle build failed with unknown error. See logs for the \"Run gradlew\" phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "c9cbc0e3-1e4f-4f2a-8158-d536f33b35af",
+      "hash": "3d44f2e5f3dc9b046c6df7b126f104be41c85e83"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "f0670d1c5734a4267a66b1d262ec63ff37591b6a",
+    "gitCommitMessage": "Block 4: Android SDK setup complete - build dry-run logs updated",
+    "priority": "HIGH",
+    "createdAt": "2025-09-16T10:09:42.897Z",
+    "updatedAt": "2025-09-16T10:13:08.660Z",
+    "completedAt": "2025-09-16T10:13:00.835Z",
+    "expirationDate": "2025-12-15T10:09:42.968Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 217,
+      "buildQueueTime": 38928,
+      "buildDuration": 158462
+    }
+  },
+  {
+    "id": "687f7f09-4e5b-4be9-9e64-21972e76ffbd",
+    "status": "FINISHED",
+    "platform": "IOS",
+    "artifacts": {
+      "buildUrl": "https://expo.dev/artifacts/eas/dUqAquKRnMZzXJiZQWyjVk.ipa",
+      "xcodeBuildLogsUrl": "https://job-logs.eascdn.net/production-xcode-logs/687f7f09-4e5b-4be9-9e64-21972e76ffbd?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20250917%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250917T101800Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=0d33c16de4d8ff76ba6da35aa827e232a1f10d2e124e48852ba3442f57468479e3c613e202f44f8efb114f690edf14f70f83c3b9e7ce9198f21274e0d64053663a5c58e4f992929923ab4729e02692b063d2d32a3bc1b4670b99c98f5b899aaa8e0cc856efdded7eda470ed4e83554da614e9545dafacd380737404e6f39acc0d893dbc9b5572fbd5f4e5467fa27de5a98d92341c1887d596b0b84d3c3d6316e370b944460a819621b601ba8f431c2b3b0003b4da7878534161818b413438b6aab3c6ed2656a53bc26bfa1c7ffe7cc28204e68ff43fa8c561427fab0c73510c7a166b286931eb7affd20a9be3daa9514e008bb4b1fe686df5d66fbbdc9d62344",
+      "applicationArchiveUrl": "https://expo.dev/artifacts/eas/dUqAquKRnMZzXJiZQWyjVk.ipa"
+    },
+    "fingerprint": {
+      "id": "c90298a1-bf84-4e93-afd1-bb648a311e77",
+      "hash": "a5bcc1b2f0bb0f197cd1e437ebf755c5938ec0aa"
+    },
+    "initiatingActor": {
+      "id": "b8e06527-9916-487e-a99c-ef820426a40c",
+      "displayName": "shambez"
+    },
+    "project": {
+      "id": "677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      "name": "voiceappme",
+      "slug": "voiceapp-me",
+      "ownerAccount": {
+        "id": "dd6c1dd6-7ef2-43c6-ac5e-cc76aa6c9ed0",
+        "name": "shambez"
+      }
+    },
+    "distribution": "INTERNAL",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0",
+    "appBuildVersion": "1",
+    "runtimeVersion": "1.0.0",
+    "gitCommitHash": "f0670d1c5734a4267a66b1d262ec63ff37591b6a",
+    "gitCommitMessage": "Block 4: Android SDK setup complete - build dry-run logs updated",
+    "priority": "HIGH",
+    "createdAt": "2025-09-16T09:57:09.811Z",
+    "updatedAt": "2025-09-16T10:04:21.249Z",
+    "completedAt": "2025-09-16T10:04:14.752Z",
+    "expirationDate": "2025-12-15T09:57:10.004Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 121049,
+      "buildQueueTime": 77805,
+      "buildDuration": 221913
+    }
+  }
+]
