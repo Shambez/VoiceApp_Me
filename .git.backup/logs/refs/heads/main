@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 bf9099e3fbbad6fafe8b60b88f9e4244cc7a6bd7 Shambez <shambez@gmail.com> 1757673098 +1000	commit (initial): chore: save state before prebuild clean - core config files
-bf9099e3fbbad6fafe8b60b88f9e4244cc7a6bd7 b0b53f2de379cc64e02577c67aace02199ea62a5 Shambez <shambez@gmail.com> 1757673174 +1000	commit: chore: add build scripts and project configuration files
-b0b53f2de379cc64e02577c67aace02199ea62a5 7380827ad591954ad0ba6dc858e9d09eedc261fe Shambez <shambez@gmail.com> 1757675292 +1000	commit: chore: add assets and package-lock.json
-7380827ad591954ad0ba6dc858e9d09eedc261fe 7ed2d618dc731da5f3e314891134078e19bca256 Shambez <shambez@gmail.com> 1757676028 +1000	commit: chore: save state before prebuild clean - add android and ios platform files

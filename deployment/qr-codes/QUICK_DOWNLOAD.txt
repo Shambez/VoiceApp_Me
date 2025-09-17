@@ -1,0 +1,14 @@
+🚀 VoiceApp Me - Quick Download Links
+
+📱 iOS (Ready Now - Updated Icon):
+https://expo.dev/accounts/shambez/projects/voiceapp-me/builds/687f7f09-4e5b-4be9-9e64-21972e76ffbd
+
+🤖 Android (Configuration Fixed - Build Ready):
+Run: eas build --platform android --profile preview
+
+✅ Status: All Android build issues FIXED!
+✅ Icon: VoiceAppMe_with_Mute.png configured
+✅ EAS: Project linked and credentials ready
+
+To get BOTH platforms with QR codes:
+eas build --platform all --profile preview

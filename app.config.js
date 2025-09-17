@@ -7,10 +7,10 @@ export default {
     version: '1.0.0',
     owner: 'shambez',
     orientation: 'portrait',
-    icon: './assets/VoiceAppMe_with_Mute.png',
+    icon: './assets/voiceappme_icon_update.png',
     userInterfaceStyle: 'light',
     splash: {
-      image: './assets/VoiceAppMe_with_Mute.png',
+      image: './assets/voiceappme_icon_update.png',
       resizeMode: 'contain',
       backgroundColor: '#ffffff'
     },
@@ -22,12 +22,12 @@ export default {
       bundleIdentifier: 'com.shambebabu.voiceappme'
     },
     android: {
-      icon: './assets/VoiceAppMe_with_Mute.png',
+      icon: './assets/voiceappme_icon_update.png',
       package: 'com.shambebabu.voiceappme',
       jsEngine: 'jsc'
     },
     web: {
-      favicon: './assets/favicon.png'
+      favicon: './assets/voiceappme_icon_update.png'
     },
     plugins: [
       [

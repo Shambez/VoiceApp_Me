@@ -1,0 +1,13 @@
+iOS VoiceApp Me Download Link:
+
+https://expo.dev/accounts/shambez/projects/voiceapp-me/builds/687f7f09-4e5b-4be9-9e64-21972e76ffbd
+
+Instructions:
+1. Copy this link above
+2. Open Safari on your iPhone or iPad  
+3. Paste and go to the link
+4. The page will show a QR code you can scan or an "Install" button
+5. Tap "Install" to download the app
+
+Alternative Direct Download:
+https://expo.dev/artifacts/eas/dUqAquKRnMZzXJiZQWyjVk.ipa

@@ -7,7 +7,7 @@ export default function App() {
       <StatusBar barStyle="dark-content" />
       <View style={styles.content}>
         <Text style={styles.title}>VoiceApp Me</Text>
-        <Text style={styles.subtitle}>Voice Communication App</Text>
+        <Text style={styles.subtitle}>Voice Call Communication App</Text>
       </View>
     </SafeAreaView>
   );

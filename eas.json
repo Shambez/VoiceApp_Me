@@ -3,17 +3,30 @@
     "version": ">= 7.0.0",
     "appVersionSource": "local"
   },
-  "build": {
+   "build": {
     "development": {
-      "distribution": "internal",
-      "developmentClient": true
-    },
-    "preview": {
+      "developmentClient": true,
       "distribution": "internal"
     },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "preview"
+      },
+      "ios": {
+        "buildConfiguration": "Release"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
     "production": {
-      "distribution": "store",
-      "autoIncrement": true
+      "ios": {
+        "buildConfiguration": "Release"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
   },
   "submit": {
