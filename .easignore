@@ -1,0 +1,29 @@
+# Speed up EAS upload by excluding large/unnecessary files
+# VCS
+.git
+
+# Package installs happen on EAS
+node_modules
+
+# Local build artifacts
+web-build
+.dist
+/dist
+/build
+
+# iOS
+ios/Pods
+ios/build
+ios/VoiceAppMe.xcworkspace
+
+# Android
+android/app/build
+android/build
+
+# Misc
+.expo
+.expo-shared
+deployment
+
+# Logs
+*.log

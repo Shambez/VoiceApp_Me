@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceApp Me - Download</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .platform-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            text-align: center;
+        }
+        .qr-code {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .qr-code img {
+            display: block;
+            margin: 0 auto;
+        }
+        .platform-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .instructions {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+        .url {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px 10px;
+            border-radius: 5px;
+            word-break: break-all;
+            margin: 5px 0;
+        }
+        .status {
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .status.available { background: rgba(40, 167, 69, 0.3); }
+        .status.building { background: rgba(255, 193, 7, 0.3); }
+        .status.error { background: rgba(220, 53, 69, 0.3); }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ VoiceApp Me</h1>
+        <p style="text-align: center; font-size: 1.1em; margin-bottom: 30px;">
+            Download the app on your device by scanning the QR codes below
+        </p>
+
+        <!-- iOS Section -->
+        <div class="platform-section">
+            <div class="platform-title">📱 iOS App</div>
+            <div class="status available">✅ Ready to Download</div>
+            
+            <div class="qr-code">
+                <img src="images/ios_app.png" alt="iOS App QR Code" />
+            </div>
+            
+            <div class="instructions">
+                <strong>iPhone/iPad Instructions:</strong><br>
+                1. Open Camera app<br>
+                2. Point at the QR code above<br>
+                3. Tap the notification banner<br>
+                4. Install the app (requires iOS 16+)
+            </div>
+            
+            <div class="url">
+                Direct link: <br>
+                <a href="https://expo.dev/artifacts/eas/mXN4dkGXdAhcEtTo78MUYo.ipa" style="color: #FFD700;">
+                    Download iOS App (.ipa)
+                </a>
+            </div>
+        </div>
+
+        <!-- Android Section -->
+        <div class="platform-section">
+            <div class="platform-title">🤖 Android App</div>
+            <div class="status building">⚠️ Build In Progress</div>
+            
+            <div class="instructions">
+                <strong>Current Status:</strong><br>
+                Android builds are currently experiencing build issues.<br>
+                Working on fixes and will update with QR code when ready.
+            </div>
+        </div>
+
+        <!-- Web Section -->
+        <div class="platform-section">
+            <div class="platform-title">🌐 Web App</div>
+            <div class="status available">✅ Available on WiFi Network</div>
+            
+            <div class="qr-code">
+                <img src="images/web_app.png" alt="Web App QR Code" />
+            </div>
+            
+            <div class="instructions">
+                <strong>Any Device Instructions:</strong><br>
+                1. Make sure your device is on the same WiFi network<br>
+                2. Open Camera app (iPhone) or QR scanner<br>
+                3. Scan the QR code above<br>
+                4. Open in your browser
+            </div>
+            
+            <div class="url">
+                Local URL: <br>
+                <a href="http://192.168.0.15:8080" style="color: #FFD700;">
+                    http://192.168.0.15:8080
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Generated on: <script>document.write(new Date().toLocaleString())</script><br>
+            Ensure all devices are on the same WiFi network for web app access
+        </div>
+    </div>
+</body>
+</html>
