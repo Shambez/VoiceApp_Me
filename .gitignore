@@ -1,9 +1,3 @@
-.DS_Store
-node_modules/
-ios/Pods/
-.env
-
-cat > .gitignore <<'EOF'
 # macOS / system junk
 .DS_Store
 
@@ -47,5 +41,6 @@ android/app/build/
 *.ipa
 *.aab
 *.bak
-EOF
+
+# Google Cloud credentials
 voiceappme-9890f8068f27.json
