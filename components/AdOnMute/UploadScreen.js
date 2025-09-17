@@ -4,7 +4,7 @@ import { View, Image, Text, Button, StyleSheet } from 'react-native';
 export default function UploadScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/simba_ai.png')} style={styles.logo} />
+      <Image source={require('../../assets/voiceappme/adonmute/simba_ai.png')} style={styles.logo} />
       <Text style={styles.title}>
         Hey there, I’m Simba — your personal AI guide!
         {"\n"}Ready to help you roam the digital savannahs, answer your questions, create ads, or handle anything you throw at me.
