@@ -1,16 +1,3 @@
-[
-  {
-    "id": "687f7f09-4e5b-4be9-9e64-21972e76ffbd",
-    "platform": "iOS",
-    "status": "finished",
-    "profile": "preview",
-    "distribution": "internal",
-    "artifacts": {
-      "buildUrl": "https://expo.dev/accounts/shambez/projects/voiceapp-me/builds/687f7f09-4e5b-4be9-9e64-21972e76ffbd"
-    },
-    "applicationArchiveUrl": "https://expo.dev/artifacts/eas/dUqAquKRnMZzXJiZQWyjVk.ipa",
-    "commit": "f0670d1c5734a4267a66b1d262ec63ff37591b6a",
-    "runtimeVersion": "1.0.0",
-    "sdkVersion": "54.0.0"
-  }
-]
+The following error occurred:
+  All of the following must be provided when using --json: --non-interactive
+See more help with --help

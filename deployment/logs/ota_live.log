@@ -1,0 +1,28 @@
+[expo-cli] --non-interactive is not supported, use $CI=1 instead
+[expo-cli] Starting Metro Bundler
+[expo-cli] Android node_modules/expo/AppEntry.js ▓░░░░░░░░░░░░░░░  9.8% ( 42/164)
+[expo-cli] iOS node_modules/expo/AppEntry.js ▓▓▓▓░░░░░░░░░░░░ 25.0% (5/9)
+[expo-cli] Android Bundled 3924ms node_modules/expo/AppEntry.js (563 modules)
+[expo-cli] iOS node_modules/expo/AppEntry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (570/570)
+[expo-cli] iOS Bundled 8529ms node_modules/expo/AppEntry.js (570 modules)
+[expo-cli] iOS node_modules/expo/AppEntry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (570/570)
+[expo-cli] Creating asset map
+[expo-cli] 
+[expo-cli] › android bundles (2):
+[expo-cli] _expo/static/js/android/AppEntry-cd03eab74db89248122c6aeed24271c8.js (1.11 MB)
+[expo-cli] _expo/static/js/android/AppEntry-cd03eab74db89248122c6aeed24271c8.js.map (4.74 MB)
+[expo-cli] 
+[expo-cli] › ios bundles (2):
+[expo-cli] _expo/static/js/ios/AppEntry-cf0f19a0eaf0fab4cbf0e10e1888e709.hbc (1.03 MB)
+[expo-cli] _expo/static/js/ios/AppEntry-cf0f19a0eaf0fab4cbf0e10e1888e709.hbc.map (4.24 MB)
+[expo-cli] 
+[expo-cli] › Files (2):
+[expo-cli] assetmap.json (2 B)
+[expo-cli] metadata.json (249 B)
+[expo-cli] 
+[expo-cli] Exported: dist
+✔ Uploaded 2 app bundles
+✔ Uploading assets skipped - no new assets found
+ℹ 1 iOS asset, 1 Android asset (maximum: 2000 total per update). Learn more about asset limits: https://expo.fyi/eas-update-asset-limits
+⌛️ Computing the project fingerprints is taking longer than expected...
+⏩ To skip this step, set the environment variable: EAS_SKIP_AUTO_FINGERPRINT=1
