@@ -19,7 +19,10 @@ export default {
     ],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'com.shambebabu.voiceappme'
+      bundleIdentifier: 'com.shambebabu.voiceappme',
+      infoPlist: {
+        ITSAppUsesNonExemptEncryption: false
+      }
     },
     android: {
       icon: './assets/voiceappme_icon_update.png',

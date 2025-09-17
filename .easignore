@@ -1,6 +1,7 @@
 # Speed up EAS upload by excluding large/unnecessary files
 # VCS
 .git
+.git.backup
 
 # Package installs happen on EAS
 node_modules
@@ -24,6 +25,16 @@ android/build
 .expo
 .expo-shared
 deployment
+
+# Development tools
+.vscode
+.idea
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
