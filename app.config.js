@@ -41,9 +41,17 @@ export default {
       ],
     ],
     updates: {
-      url: "https://u.expo.dev/677f6294-79c1-4bf9-b8fb-b212ec28fb88"
+      url: "https://u.expo.dev/677f6294-79c1-4bf9-b8fb-b212ec28fb88",
+      enabled: true,
+      checkAutomatically: 'ON_LOAD',
+      fallbackToCacheTimeout: 10000,
+      requestHeaders: {
+        'expo-channel-name': process.env.EXPO_PUBLIC_APP_ENV || 'preview'
+      }
     },
-    runtimeVersion: "1.0.0",
+    runtimeVersion: {
+      policy: 'sdkVersion'
+    },
     extra: {
       eas: {
         projectId: process.env.EXPO_PROJECT_ID || '677f6294-79c1-4bf9-b8fb-b212ec28fb88'

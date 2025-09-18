@@ -2,15 +2,31 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar, TouchableOpacity } from 'react-native';
 import AdOnMute from './components/AdOnMute/AdOnMute';
 import { testFirebaseConfig } from './utils/firebaseTest';
+import { initializeUpdates, getCurrentUpdateInfo } from './utils/updateManager';
 
 export default function App() {
   const [showAdOnMute, setShowAdOnMute] = useState(false);
   const [firebaseStatus, setFirebaseStatus] = useState(null);
+  const [updateInfo, setUpdateInfo] = useState(null);
 
   useEffect(() => {
-    // Test Firebase configuration on app start
-    const result = testFirebaseConfig();
-    setFirebaseStatus(result.isValid ? '🔥 Firebase Connected' : '❌ Firebase Config Error');
+    async function initializeApp() {
+      // Test Firebase configuration
+      const firebaseResult = testFirebaseConfig();
+      setFirebaseStatus(firebaseResult.isValid ? '🔥 Firebase Connected' : '❌ Firebase Config Error');
+      
+      // Initialize EAS Updates
+      try {
+        const updateResult = await initializeUpdates();
+        const currentInfo = await getCurrentUpdateInfo();
+        setUpdateInfo(currentInfo);
+        console.log('🚀 App initialized with updates:', currentInfo);
+      } catch (error) {
+        console.error('❌ Error initializing updates:', error);
+      }
+    }
+    
+    initializeApp();
   }, []);
 
   if (showAdOnMute) {
@@ -25,6 +41,11 @@ export default function App() {
         <Text style={styles.subtitle}>Voice Call Communication App</Text>
         {firebaseStatus && (
           <Text style={styles.statusText}>{firebaseStatus}</Text>
+        )}
+        {updateInfo && (
+          <Text style={styles.statusText}>
+            📲 Updates: {updateInfo.isEmbeddedLaunch ? 'Built-in' : 'OTA'} | Channel: {updateInfo.channel || 'default'}
+          </Text>
         )}
         
         <View style={styles.toolsContainer}>

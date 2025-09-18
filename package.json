@@ -13,7 +13,12 @@
     "build:ios": "eas build -p ios",
     "submit": "eas submit",
     "eject": "expo eject",
-    "test": "jest"
+    "test": "jest",
+    "update": "node scripts/deploy-update.js preview",
+    "update:dev": "node scripts/deploy-update.js development",
+    "update:preview": "node scripts/deploy-update.js preview",
+    "update:production": "node scripts/deploy-update.js production --force",
+    "update:list": "node scripts/deploy-update.js list"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
