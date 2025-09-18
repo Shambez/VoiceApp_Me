@@ -1,4 +1,122 @@
-<!DOCTYPE html>
+#!/usr/bin/env node
+
+// Enhanced QR Code Generator for VoiceApp Me
+// Updates all QR codes and creates comprehensive download page
+
+const QRCode = require('qrcode');
+const fs = require('fs');
+const path = require('path');
+
+// Updated app download URLs with latest information
+const APP_URLS = {
+  // Latest successful iOS build
+  ios: 'https://expo.dev/artifacts/eas/mXN4dkGXdAhcEtTo78MUYo.ipa',
+  
+  // Expo Go development URL for Android
+  android: 'exp://exp.host/@shambez/voiceapp-me',
+  
+  // GitHub Pages URL for web app
+  web: 'https://shambez.github.io/VoiceApp_Me/',
+  
+  // Alternative local web URL
+  webLocal: 'http://localhost:3000',
+  
+  // GitHub repository
+  github: 'https://github.com/Shambez/VoiceApp_Me',
+  
+  // Firebase console
+  firebase: 'https://console.firebase.google.com/project/voiceappme-27679'
+};
+
+const QR_OPTIONS = {
+  width: 400,
+  margin: 3,
+  color: {
+    dark: '#000000',
+    light: '#FFFFFF'
+  },
+  errorCorrectionLevel: 'M'
+};
+
+// High contrast QR options for printing
+const PRINT_QR_OPTIONS = {
+  width: 500,
+  margin: 4,
+  color: {
+    dark: '#000000',
+    light: '#FFFFFF'
+  },
+  errorCorrectionLevel: 'H'
+};
+
+async function generateAllQRCodes() {
+  const qrDir = path.join(__dirname, 'qr-codes');
+  
+  // Ensure directory exists
+  if (!fs.existsSync(qrDir)) {
+    fs.mkdirSync(qrDir, { recursive: true });
+  }
+
+  try {
+    console.log('🔄 Generating updated QR codes for VoiceApp Me...\n');
+
+    // Generate iOS QR codes (regular and print versions)
+    await QRCode.toFile(
+      path.join(qrDir, 'ios-app-qr.png'),
+      APP_URLS.ios,
+      QR_OPTIONS
+    );
+    await QRCode.toFile(
+      path.join(qrDir, 'ios-app-qr-print.png'),
+      APP_URLS.ios,
+      PRINT_QR_OPTIONS
+    );
+    console.log('📱 iOS QR codes generated: ios-app-qr.png, ios-app-qr-print.png');
+
+    // Generate Android QR codes
+    await QRCode.toFile(
+      path.join(qrDir, 'android-app-qr.png'),
+      APP_URLS.android,
+      QR_OPTIONS
+    );
+    await QRCode.toFile(
+      path.join(qrDir, 'android-app-qr-print.png'),
+      APP_URLS.android,
+      PRINT_QR_OPTIONS
+    );
+    console.log('🤖 Android QR codes generated: android-app-qr.png, android-app-qr-print.png');
+
+    // Generate Web QR codes
+    await QRCode.toFile(
+      path.join(qrDir, 'web-app-qr.png'),
+      APP_URLS.web,
+      QR_OPTIONS
+    );
+    await QRCode.toFile(
+      path.join(qrDir, 'web-app-qr-print.png'),
+      APP_URLS.web,
+      PRINT_QR_OPTIONS
+    );
+    console.log('🌐 Web QR codes generated: web-app-qr.png, web-app-qr-print.png');
+
+    // Generate GitHub repository QR code
+    await QRCode.toFile(
+      path.join(qrDir, 'github-repo-qr.png'),
+      APP_URLS.github,
+      QR_OPTIONS
+    );
+    console.log('📂 GitHub QR code generated: github-repo-qr.png');
+
+    // Generate Firebase console QR code
+    await QRCode.toFile(
+      path.join(qrDir, 'firebase-console-qr.png'),
+      APP_URLS.firebase,
+      QR_OPTIONS
+    );
+    console.log('🔥 Firebase QR code generated: firebase-console-qr.png');
+
+    // Generate comprehensive HTML download page
+    const htmlContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -296,7 +414,14 @@
             <h1>🎤 VoiceApp Me</h1>
             <p class="subtitle">Voice Call Communication App with Ad On Mute Tool</p>
             <div class="update-info">
-                <strong>📅 Last Updated:</strong> Thursday, September 18, 2025 at 12:59 PM<br>
+                <strong>📅 Last Updated:</strong> ${new Date().toLocaleString('en-US', { 
+                    weekday: 'long',
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                })}<br>
                 <strong>🔄 Status:</strong> QR Codes Generated & Ready for Scanning<br>
                 <strong>📱 Platforms:</strong> iOS, Android, Web
             </div>
@@ -314,7 +439,7 @@
                     </div>
                 </div>
                 <div class="status success">✅ Build Available</div>
-                <a href="https://expo.dev/artifacts/eas/mXN4dkGXdAhcEtTo78MUYo.ipa" class="download-link">📲 Download IPA</a>
+                <a href="${APP_URLS.ios}" class="download-link">📲 Download IPA</a>
                 <p><small><strong>Requirements:</strong> iOS device with developer/ad-hoc certificate</small></p>
                 <p><small><strong>Size:</strong> ~50MB | <strong>Platform:</strong> iPhone/iPad</small></p>
             </div>
@@ -330,7 +455,7 @@
                     </div>
                 </div>
                 <div class="status warning">⚠️ Development Mode (Expo Go)</div>
-                <a href="exp://exp.host/@shambez/voiceapp-me" class="download-link">🚀 Open in Expo Go</a>
+                <a href="${APP_URLS.android}" class="download-link">🚀 Open in Expo Go</a>
                 <p><small><strong>Requirements:</strong> Expo Go app from Google Play Store</small></p>
                 <p><small><strong>Note:</strong> Live development version with hot reload</small></p>
             </div>
@@ -346,7 +471,7 @@
                     </div>
                 </div>
                 <div class="status success">✅ Web Version Ready</div>
-                <a href="https://shambez.github.io/VoiceApp_Me/" class="download-link">🌍 Open Web App</a>
+                <a href="${APP_URLS.web}" class="download-link">🌍 Open Web App</a>
                 <p><small><strong>Compatibility:</strong> Any device with web browser</small></p>
                 <p><small><strong>Features:</strong> Full app functionality, installable PWA</small></p>
             </div>
@@ -358,7 +483,7 @@
                     <img src="github-repo-qr.png" alt="GitHub Repository QR Code" />
                 </div>
                 <div class="status info">🔓 Open Source</div>
-                <a href="https://github.com/Shambez/VoiceApp_Me" class="download-link">💻 View on GitHub</a>
+                <a href="${APP_URLS.github}" class="download-link">💻 View on GitHub</a>
                 <p><small><strong>Repository:</strong> Shambez/VoiceApp_Me</small></p>
                 <p><small><strong>License:</strong> MIT | <strong>Language:</strong> React Native</small></p>
             </div>
@@ -370,7 +495,7 @@
                     <img src="firebase-console-qr.png" alt="Firebase Console QR Code" />
                 </div>
                 <div class="status info">⚙️ Backend Dashboard</div>
-                <a href="https://console.firebase.google.com/project/voiceappme-27679" class="download-link">🔧 Open Console</a>
+                <a href="${APP_URLS.firebase}" class="download-link">🔧 Open Console</a>
                 <p><small><strong>Project:</strong> voiceappme-27679</small></p>
                 <p><small><strong>Services:</strong> Auth, Firestore, Storage, Analytics</small></p>
             </div>
@@ -436,14 +561,72 @@
             <h3>🔧 Developer Information</h3>
             <p><strong>Project:</strong> @shambez/voiceapp-me</p>
             <p><strong>Bundle ID:</strong> com.shambebabu.voiceappme</p>
-            <p><strong>Latest Commit:</strong> 2e178e1</p>
+            <p><strong>Latest Commit:</strong> ${await getLatestCommitHash()}</p>
             <p><strong>Firebase Project:</strong> voiceappme-27679</p>
             <p><strong>Build Profile:</strong> preview</p>
             <p><strong>Expo SDK:</strong> 54.0.0</p>
             <p><strong>React Native:</strong> 0.81.4</p>
-            <p><strong>Node.js:</strong> v20.19.5</p>
-            <p><strong>Generated:</strong> 2025-09-18T02:59:36.505Z</p>
+            <p><strong>Node.js:</strong> ${process.version}</p>
+            <p><strong>Generated:</strong> ${new Date().toISOString()}</p>
         </div>
     </div>
 </body>
-</html>
+</html>`;
+
+    const downloadHtmlPath = path.join(qrDir, 'download.html');
+    fs.writeFileSync(downloadHtmlPath, htmlContent);
+    console.log('📄 Comprehensive download page created: download.html');
+
+    // Create a simple index.html redirect
+    const indexRedirect = `<!DOCTYPE html>
+<html><head><meta http-equiv="refresh" content="0;url=download.html"></head>
+<body><p>Redirecting to <a href="download.html">download page</a>...</p></body></html>`;
+    
+    fs.writeFileSync(path.join(qrDir, 'index.html'), indexRedirect);
+
+    console.log('\n✅ All QR codes and download pages generated successfully!');
+    console.log(`📁 Files saved to: ${qrDir}`);
+    console.log(`🌐 Main page: file://${downloadHtmlPath}`);
+    console.log('\n📱 QR Codes Generated:');
+    console.log('   📱 iOS: ios-app-qr.png (+ print version)');
+    console.log('   🤖 Android: android-app-qr.png (+ print version)');
+    console.log('   🌐 Web: web-app-qr.png (+ print version)');
+    console.log('   📂 GitHub: github-repo-qr.png');
+    console.log('   🔥 Firebase: firebase-console-qr.png');
+
+    // Try to open the download page automatically
+    const { exec } = require('child_process');
+    exec(`open "${downloadHtmlPath}"`, (error) => {
+      if (!error) {
+        console.log('\n🚀 Opening download page in your default browser...');
+      } else {
+        console.log('\n💡 Manually open the download page in your browser:');
+        console.log(`   file://${downloadHtmlPath}`);
+      }
+    });
+
+  } catch (error) {
+    console.error('❌ Error generating QR codes:', error);
+    process.exit(1);
+  }
+}
+
+async function getLatestCommitHash() {
+  try {
+    const { exec } = require('child_process');
+    return new Promise((resolve) => {
+      exec('git rev-parse --short HEAD', (error, stdout) => {
+        resolve(error ? 'unknown' : stdout.trim());
+      });
+    });
+  } catch {
+    return 'unknown';
+  }
+}
+
+// Run if called directly
+if (require.main === module) {
+  generateAllQRCodes();
+}
+
+module.exports = { generateAllQRCodes, APP_URLS };
