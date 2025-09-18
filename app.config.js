@@ -1,70 +1,67 @@
-import 'dotenv/config';
+import { ExpoConfig, ConfigContext } from "expo/config";
+import "dotenv/config";
 
-export default {
-  expo: {
-    name: 'VoiceApp Me',
-    slug: 'voiceapp-me',
-    version: '1.0.0',
-    owner: 'shambez',
-    orientation: 'portrait',
-    icon: './assets/voiceappme_icon_update.png',
-    userInterfaceStyle: 'light',
+export default ({ config }: ConfigContext): ExpoConfig => {
+  return {
+    ...config,
+    name: process.env.EXPO_PUBLIC_APP_NAME || "VoiceApp Me",
+    slug: "voiceapp-me",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "light",
     splash: {
-      image: './assets/voiceappme_icon_update.png',
-      resizeMode: 'contain',
-      backgroundColor: '#ffffff'
+      image: "./assets/splash.png",
+      resizeMode: "contain",
+      backgroundColor: "#ffffff"
     },
     assetBundlePatterns: [
-      '**/*'
+      "**/*"
     ],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'com.shambebabu.voiceappme',
-      infoPlist: {
-        ITSAppUsesNonExemptEncryption: false
-      }
+      bundleIdentifier: "com.shambebabu.voiceappme"
     },
     android: {
-      icon: './assets/voiceappme_icon_update.png',
-      package: 'com.shambebabu.voiceappme',
-      jsEngine: 'jsc'
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#ffffff"
+      },
+      package: "com.shambebabu.voiceappme"
     },
     web: {
-      favicon: './assets/voiceappme_icon_update.png'
+      favicon: "./assets/favicon.png"
     },
     plugins: [
+      "expo-dev-client",
       [
-        'expo-av',
+        "expo-av",
         {
-          microphonePermission: 'Allow $(PRODUCT_NAME) to access your microphone for voice recordings.',
-        },
+          microphonePermission: "Allow $(PRODUCT_NAME) to access your microphone to record audio."
+        }
       ],
+      [
+        "expo-media-library",
+        {
+          photosPermission: "Allow $(PRODUCT_NAME) to access your photos.",
+          savePhotosPermission: "Allow $(PRODUCT_NAME) to save photos.",
+          isAccessMediaLocationEnabled: true
+        }
+      ]
     ],
-    updates: {
-      url: "https://u.expo.dev/677f6294-79c1-4bf9-b8fb-b212ec28fb88",
-      enabled: true,
-      checkAutomatically: 'ON_LOAD',
-      fallbackToCacheTimeout: 10000,
-      requestHeaders: {
-        'expo-channel-name': process.env.EXPO_PUBLIC_APP_ENV || 'preview'
-      }
-    },
     runtimeVersion: {
-      policy: 'sdkVersion'
+      policy: "sdkVersion"
+    },
+    updates: {
+      url: "https://u.expo.dev/your-project-id",
+      requestHeaders: {
+        "expo-channel-name": "main"
+      }
     },
     extra: {
       eas: {
-        projectId: process.env.EXPO_PROJECT_ID || '677f6294-79c1-4bf9-b8fb-b212ec28fb88'
-      },
-      firebase: {
-        apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
-        authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
-        projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
-        storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
-        messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-        appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
-        measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID
+        projectId: process.env.EXPO_PROJECT_ID
       }
     }
-  }
+  };
 };
