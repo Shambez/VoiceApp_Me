@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "775849514818",
+    "project_id": "simbaglobal-ai",
+    "storage_bucket": "simbaglobal-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775849514818:android:7f4df01b847f10c6dddadb",
+        "android_client_info": {
+          "package_name": "com.shambebabu.voiceappme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuLZnWh-3eUXiYH8l5iIkWOrO1qhZMie8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775849514818:android:9b404e060c4b008adddadb",
+        "android_client_info": {
+          "package_name": "com.shambez.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuLZnWh-3eUXiYH8l5iIkWOrO1qhZMie8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

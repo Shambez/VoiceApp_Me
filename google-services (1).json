@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "707688440355",
+    "project_id": "voiceappme-27679",
+    "storage_bucket": "voiceappme-27679.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707688440355:android:60e53343771ea917794796",
+        "android_client_info": {
+          "package_name": "com.shambebabu.voiceappme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpXeWPtBUfG6157hUrl-N9ixPGEdQy1sM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

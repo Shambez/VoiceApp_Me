@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar, TouchableOpacity } from 'react-native';
 import AdOnMute from './components/AdOnMute/AdOnMute';
+import { testFirebaseConfig } from './utils/firebaseTest';
 
 export default function App() {
   const [showAdOnMute, setShowAdOnMute] = useState(false);
+  const [firebaseStatus, setFirebaseStatus] = useState(null);
+
+  useEffect(() => {
+    // Test Firebase configuration on app start
+    const result = testFirebaseConfig();
+    setFirebaseStatus(result.isValid ? '🔥 Firebase Connected' : '❌ Firebase Config Error');
+  }, []);
 
   if (showAdOnMute) {
     return <AdOnMute onBack={() => setShowAdOnMute(false)} />;
@@ -15,6 +23,9 @@ export default function App() {
       <View style={styles.content}>
         <Text style={styles.title}>VoiceApp Me</Text>
         <Text style={styles.subtitle}>Voice Call Communication App</Text>
+        {firebaseStatus && (
+          <Text style={styles.statusText}>{firebaseStatus}</Text>
+        )}
         
         <View style={styles.toolsContainer}>
           <TouchableOpacity 
@@ -51,7 +62,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#666',
     textAlign: 'center',
-    marginBottom: 40,
+    marginBottom: 10,
+  },
+  statusText: {
+    fontSize: 14,
+    color: '#007AFF',
+    textAlign: 'center',
+    marginBottom: 30,
+    fontWeight: '500',
   },
   toolsContainer: {
     width: '100%',
